@@ -14,9 +14,9 @@ class User{
     return "{$this->name} ({$this->email})";
   }
 
-  $u1 = new User("Alice", "alice@example.com");
-  echo $u1->describe();
-
 }
+
+$u1 = new User("Alice", "alice@example.com");
+echo $u1->describe();
 
 ?>
