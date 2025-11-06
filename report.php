@@ -16,7 +16,7 @@ abstract class Report {
 class TextReport extends Report {
   public function render(){
     return "Report {$this->title} is in plain text\n";
-  }
+  } // this prints out the report in plain text format
 }
 
 class JsonReport extends Report {
@@ -25,7 +25,7 @@ class JsonReport extends Report {
                        "title" => $this->title,
                        "type" => "JSON Report"
                        ], JSON_PRETTY_PRINT);
-  }
+  } // this prints out the report in JSON format.
 }
 
 $title = "Monthly Salary";
