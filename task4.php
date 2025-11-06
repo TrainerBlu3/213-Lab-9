@@ -35,6 +35,6 @@ class Teacher extends Member {
 $members = [new Student("Alice", "alice@school.com"), new Teacher("Bob", "bob@school.com")];
 
 foreach($members as $member) {
-	echo $member->describe() . " - " . $member->getRole() . "\n";
+	echo $member->describe() . "\n";
 }
 ?>
